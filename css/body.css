@@ -1,0 +1,79 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#b5b5b5;
+}
+
+.background_pic1 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.background_pic2 {
+  position: relative;
+  background-color:#4d4d4d;
+  z-index: 3;
+}
+	
+.intro {
+  position: absolute;
+  text-align:right;
+  font-size:2vw;
+  color:#3d3d3d;
+  top: 400px;
+  left:40px;
+  right:670px;
+  z-index: 2;
+}
+
+.intro_n1 {
+  position: absolute;
+  text-align:left;
+  font-size:17px;
+  color:white;
+  top: 220px;
+  left:880px;
+  right:40px;
+  z-index: 4;
+}
+
+.intro_n2 {
+  position: absolute;
+  text-align:left;
+  font-size:17px;
+  color:white;
+  top: 480px;
+  left:270px;
+  right:800px;
+  z-index: 5;
+}
+
+.ibutton {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  max-width: 250px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  font-family: roboto;
+}
+
+.ibutton button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: black;
+  background-color: #ffcc00;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.ibutton button:hover {
+  opacity: 0.7;
+}

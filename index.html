@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/header.css" />
+	<link rel="stylesheet" type="text/css" href="css/body.css" />
+	<link rel="stylesheet" type="text/css" href="css/slids.css" />
+	<link rel="stylesheet" type="text/css" href="css/cardview.css"/>
+	<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	<link rel="stylesheet" type="text/css" href="css/video.css"/>
+</head>
+<body>
+	<div class="header">
+		<a href="#home" class="name_top">Ax Mebel</a>
+		<div class="header-right">
+			<a class="active" href="#home">Home</a>
+			<a href="#product">Product</a>
+			<a href="mailto:zisiwa77@gmail.com?Subject=Hello%20Ax">Contact</a>
+			<a href="#about">About</a>
+		</div>
+	</div>
+	<br>
+	<img class="background_pic1" src="images/couch.jpg" alt="Couch" >
+	<p class="intro">
+		We are one of the companies engaged in the production of furniture items. 
+		In addition to the products we offer, we also accept orders for other models according to your request, sending pictures and sizes that match your request
+	</p>
+
+	<div id="product" class="slideshow-container">
+		<div class="mySlides">
+			<img src="images/slide1.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+			<img src="images/slide2.jpg" style="width:100%">
+		</div>
+		<div class="mySlides">
+
+			<img src="images/slide3.jpg" style="width:100%">
+		</div>
+	</div>
+
+	<div style="text-align:center">
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+	</div>
+	<br>
+	<center>
+		<div class="row">
+			<div class="cardcolumn1">
+				<div class="card">
+					<img src="images/productset1.jpg" alt="Produk" style="width:100%">
+					<div style="padding-bottom:2px">
+						<h2>Product Set</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="cardcolumn1">
+				<div class="card">
+					<img src="images/productset2.jpg" alt="Produk" style="width:100%">
+					<div style="padding-bottom:2px">
+						<h2>Kitchen Set</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<form method="post" action="product.php">
+			<p class="ibutton"><button>See More Product</button></p>
+		</form>
+		<br>
+		<center>
+			<div class="container row">
+				<div class="column">
+					<video autoplay muted loop id="myVideo">
+						<source src="video/video1.mp4" type="video/mp4">
+							Your browser does not support HTML5 video.
+						</video>
+					</div>
+					<div class="column">
+						<video autoplay muted loop id="myVideo">
+							<source src="video/video2.mp4" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+						</div>
+						<div class="content">
+							<h1 id="about">About</h1>
+							<p>In working on furniture products we always use selected materials that have been installed using and repairing, 
+								we always control all production processes from material selection, construction quality, finishing to packing. 
+							We also use experts in their fields to ensure good quality furniture and quality up to the hands of consumers.</p>
+						</div>
+					</div>
+				</center>
+				<div class="footer">
+					<img class = "socialpic" src="images/pinterest.png" alt="pinterest">
+					<img class = "socialpic" src="images/facebook.png" alt="facebook">
+					<img class = "socialpic" src="images/twitter.png" alt="twitter">
+					<img class = "socialpic" src="images/instagram.png" alt="instagram">
+				</div>
+
+				<script>
+					var slideIndex = 0;
+					showSlides();
+
+					function showSlides() {
+						var i;
+						var slides = document.getElementsByClassName("mySlides");
+						var dots = document.getElementsByClassName("dot");
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";  
+						}
+						slideIndex++;
+						if (slideIndex > slides.length) {slideIndex = 1}    
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex-1].style.display = "block";  
+							dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+	</script>
+</body>
+</html>

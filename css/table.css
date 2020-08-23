@@ -1,0 +1,36 @@
+#tableproduct {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+#tableproduct td, #tableproduct th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tableproduct tr:nth-child(even){background-color: #f2f2f2;}
+
+#tableproduct tr:hover {background-color: #ddd;}
+
+#tableproduct th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #145054;
+  color: white;
+}
+
+button {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttonedit {
+  background-color: #4caf50;
+}
+
+.buttondelete {
+  background-color: #af4b4b;
+}

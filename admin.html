@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard Login</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
+</head>
+<body>
+	<form action="process.php?aksi=login" method="POST" enctype="multipart/form-data">
+   <div class="login-form">
+    <div class="left">
+    </div>
+    <div class="right">
+      <div class="container">
+        <div class="form-heading">Log In</div>
+        <div class="form-element">
+          <label for="login-username">Username</label>
+          <input type="text" name="username"/>
+        </div>
+        <div class="form-element">
+          <label for="login-password">Password</label>
+          <input type="password" name="password"/>
+        </div>
+        <div class="form-element">
+          <button>Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</body>
+</html>

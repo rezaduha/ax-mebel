@@ -1,0 +1,116 @@
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+
+body {
+  background:#ddd;
+}
+
+.login-form {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:720px;
+  height:400px;
+  background:#fff;
+  font-family:"Open Sans",sans-serif;
+  box-shadow:12px 10px 10px 5px #999;
+}
+
+.login-form > div {
+  float:left;
+  width:50%;
+  height:100%;
+}
+
+.login-form div.left {
+  background: url("axlogo.jpg") center  no-repeat;
+  background-size:cover;
+  padding:180px 50px 50px;
+  text-align:center;
+}
+
+.login-form div.left div.heading {
+  font-size:22px;
+  font-weight:600;
+  color:#fff;
+  margin-bottom:20px;
+}
+
+.login-form div.left button {
+  width:100%;
+  padding:10px;
+  font-size:16px;
+  margin:8px 0px;
+  font-weight:600;
+  border:2px solid #fff;
+  background:#fff;
+  color:#111;
+  cursor:pointer;
+}
+
+.login-form div.right {
+  padding: 50px 40px;
+}
+
+.login-form div.right .form-heading {
+  font-size:26px;
+  font-weight:600;
+  margin-bottom:35px;
+  color:#2a2f31;
+}
+
+.login-form div.right .form-element {
+  margin:12px 0px;
+}
+
+.login-form div.right .form-element label {
+  color:#111;
+  font-size:16px;
+}
+
+.login-form div.right .form-element input {
+  width:100%;
+  padding:6px 2px;
+  font-size:17px;
+  border:none;
+  border-bottom:1px solid #777;
+  outline:none;
+}
+
+.login-form div.right .form-element button {
+  width:100%;
+  padding:15px;
+  font-size:16px;
+  font-weight:600;
+  margin-top:15px;
+  background:#4e3f39;
+  color:#fff;
+  border:none;
+  outline:none;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+
+.login-form div.right div.form-group {
+  margin-top:25px;
+}
+
+.login-form div.right div.form-group > div {
+  float:left;
+  width:50%;
+}
+
+.login-form div.right div.form-group > div:nth-child(2) {
+  text-align:right;
+}
+
+.login-form div.right div.form-group > div > a {
+  color:#555;
+  font-weight:600;
+  font-size:14px;
+  text-decoration:none;
+}
